@@ -37,3 +37,9 @@ nnoremap \f :action FindUsages<CR>
 nnoremap \; :action RecentFiles<CR>
 nnoremap \p :action ParameterInfo<CR>
 nnoremap \b :action ToggleLineBreakpoint<CR>
+nnoremap \B :action ToggleMethodBreakpoint<CR>
+nnoremap \' :action ToggleBookmark<CR>
+nnoremap \; :action EditBookmark<CR>
+nnoremap \, :action ShowBookmarks<CR>
+nnoremap \> :action NextBookmark<CR>
+nnoremap \< :action PreviousBookmark<CR>
