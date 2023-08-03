@@ -30,6 +30,8 @@ Plug 'tpope/vim-commentary'
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 nnoremap \d :action QuickJavaDoc<CR>
 nnoremap \e :action ShowErrorDescription<CR>
+nnoremap \[ :action GotoNextError<CR>
+nnoremap \] :action GotoPreviousError<CR>
 nnoremap \r :action ReformatCode<CR>
 nnoremap \g :action GotoDeclaration<CR>
 nnoremap \G :action GotoImplementation<CR>
