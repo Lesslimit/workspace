@@ -182,7 +182,7 @@ nmap ,H :action LocalHistory.ShowHistory<cr>
 nmap ,e :action JumpToLastChange<cr>
 
 " AceJump shortcut
-nmap <leader>j :action AceAction<cr>
+nmap <leader>ja :action AceAction<cr>
 nmap <leader>J :action AceTargetAction<cr>
 nmap ,yy :action CopySourceRootPath<cr>
 nmap ,ya :action CopyAbsolutePath<cr>
