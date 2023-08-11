@@ -106,12 +106,16 @@ nmap ,a :action GotoAction<cr>
 nmap <leader>x :action GotoNextError<cr>
 nmap <leader>X :action GotoPreviousError<cr>
 
+" Formatting
+nmap <leader>ff :action ReformatCode<cr>
+
 " Refactorings
 vmap T :action Refactorings.QuickListPopupAction<cr>
 vmap <leader>rm :action ExtractMethod<cr>
 nmap <leader>rr :action RenameElement<cr>
 nmap <leader>rg :action Generate<cr>
 nmap <leader>rI :action OptimizeImports<cr>
+
 " Inspection
 nmap <leader>rc :action InspectCode<cr>
 
