@@ -6,7 +6,9 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "window.zoomLevel": 0.5,
   "launch": {},
-  "[json]": {},
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "workbench.statusBar.visible": false,
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": false,
@@ -30,6 +32,8 @@
     // splits
     { "before": ["leader", "v"], "commands": [":vsplit"] },
     { "before": ["leader", "s"], "commands": [":split"] },
+
+    { "before": ["leader", "j", "a"], "commands": ["extension.jumpy-word"] },
 
     // panes
     {
@@ -66,7 +70,10 @@
       "commands": ["editor.action.quickFix"]
     },
     { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
-    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["leader", "f", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
