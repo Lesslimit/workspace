@@ -1,3 +1,6 @@
+-- Make file explorer to tree view
+-- vim.cmd('let g:netrw_liststyle = 3')
+
 vim.g.have_nerd_font = true
 
 -- Make line numbers default
@@ -46,3 +49,8 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 20
+
+vim.opt.wrap = false
+
+vim.opt.termguicolors = true
+vim.opt.background = 'dark'

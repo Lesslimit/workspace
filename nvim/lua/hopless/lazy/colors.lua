@@ -17,6 +17,7 @@ return {
         sidebars = 'dark', -- style for sidebars, see below
         floats = 'dark', -- style for floating windows
       },
+      on_highlights = function(highlights, colors) end,
     },
     init = function()
       vim.cmd.colorscheme('tokyonight-night')
