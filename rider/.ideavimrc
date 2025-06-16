@@ -1,7 +1,10 @@
 set ignorecase
 set smartcase
 set scrolloff=3 " 3 lines above/below cursor when scrolling
+set number
 set relativenumber
+
+set commentary
 
 " Emulated Plugins
 set surround
@@ -82,9 +85,10 @@ nmap <leader>s :action GotoSymbol<cr>
 nmap <leader>m :action ToggleBookmark<cr>
 nmap <leader>; :action FileStructurePopup<cr>
 nmap <leader>M :action ActivateStructureToolWindow<cr>
+nmap <leader>E :action ActivateProjectToolWindow<cr>
 nmap <leader>d :action ShowErrorDescription<cr>
-nmap <leader>I :action GotoImplementation<cr>
-nmap <leader>i :action GotoDeclaration<cr>
+nmap <leader>gi :action GotoImplementation<cr>
+nmap <leader>gd :action GotoDeclaration<cr>
 nmap <leader>U :action GotoSuperMethod<cr>
 nmap <leader>e :action RecentFiles<cr>
 nmap <leader>a :action RecentChangedFiles<cr>
@@ -169,7 +173,6 @@ nmap ,c :action CompileDirty<cr>
 nmap ,r :action Run<cr>
 nmap ,R :action RunAnything<cr>
 nmap ,b :action Debug<cr>
-nmap ,c :action RunClass<cr>
 nmap ,d :action DebugClass<cr>
 nmap ,t :action RerunTests<cr>
 nmap ,T :action RerunFailedTests<cr>
@@ -182,6 +185,7 @@ nmap ,H :action LocalHistory.ShowHistory<cr>
 nmap ,e :action JumpToLastChange<cr>
 nmap ,df :action ToggleDistractionFreeMode<cr>
 nmap ,zm :action ToggleZenMode<cr>
+nmap ,ha :action HideAllWindows<cr>,
 
 " AceJump shortcut
 nmap <leader>ja :action AceAction<cr>
