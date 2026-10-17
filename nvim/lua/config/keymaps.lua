@@ -2,6 +2,9 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+vim.keymap.set("n", "<leader>j", "]e", { desc = "Next Error", remap = true })
+vim.keymap.set("n", "<leader>k", "[e", { desc = "Previous Error", remap = true })
+
 local function format_jsonl_pretty()
   if vim.bo.filetype ~= "jsonl" then
     vim.notify("JSONL pretty formatting is only available for jsonl buffers", vim.log.levels.WARN)
